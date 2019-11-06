@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCarro = new System.Windows.Forms.Button();
             this.btnBrazo = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnForward = new System.Windows.Forms.Button();
+            this.btnLeft = new System.Windows.Forms.Button();
+            this.btnRight = new System.Windows.Forms.Button();
+            this.btnDown = new System.Windows.Forms.Button();
+            this.btnUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCarro
@@ -57,71 +61,103 @@
             this.btnBrazo.Text = "Brazo";
             this.btnBrazo.UseVisualStyleBackColor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(1, 1);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Image = global::veiculoInterfaz.Properties.Resources.back_arrow__menos;
+            this.button2.Location = new System.Drawing.Point(168, 305);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 100);
+            this.button2.TabIndex = 10;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(257, 93);
+            this.button1.Image = global::veiculoInterfaz.Properties.Resources.forward_arrow__menos;
+            this.button1.Location = new System.Drawing.Point(378, 93);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 100);
+            this.button1.TabIndex = 9;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnBack
             // 
-            this.button4.Location = new System.Drawing.Point(257, 196);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(63, 50);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.Image = global::veiculoInterfaz.Properties.Resources.back_arrow;
+            this.btnBack.Location = new System.Drawing.Point(378, 305);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 100);
+            this.btnBack.TabIndex = 8;
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnForward
             // 
-            this.button5.Location = new System.Drawing.Point(326, 149);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(63, 50);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnForward.Image = global::veiculoInterfaz.Properties.Resources.forward_arrow;
+            this.btnForward.Location = new System.Drawing.Point(166, 93);
+            this.btnForward.Name = "btnForward";
+            this.btnForward.Size = new System.Drawing.Size(100, 100);
+            this.btnForward.TabIndex = 7;
+            this.btnForward.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnLeft
             // 
-            this.button6.Location = new System.Drawing.Point(188, 149);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(63, 50);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnLeft.BackColor = System.Drawing.Color.Transparent;
+            this.btnLeft.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLeft.Image = global::veiculoInterfaz.Properties.Resources.left_arrow;
+            this.btnLeft.Location = new System.Drawing.Point(168, 199);
+            this.btnLeft.Name = "btnLeft";
+            this.btnLeft.Size = new System.Drawing.Size(100, 100);
+            this.btnLeft.TabIndex = 6;
+            this.btnLeft.Text = "button6";
+            this.btnLeft.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnRight
             // 
-            this.button7.Location = new System.Drawing.Point(326, 93);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(63, 50);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnRight.Image = global::veiculoInterfaz.Properties.Resources.right_arrow;
+            this.btnRight.Location = new System.Drawing.Point(378, 199);
+            this.btnRight.Name = "btnRight";
+            this.btnRight.Size = new System.Drawing.Size(100, 100);
+            this.btnRight.TabIndex = 5;
+            this.btnRight.Text = "button5";
+            this.btnRight.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnDown
             // 
-            this.button8.Location = new System.Drawing.Point(188, 93);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(63, 50);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnDown.Image = global::veiculoInterfaz.Properties.Resources.down_arrow;
+            this.btnDown.Location = new System.Drawing.Point(272, 305);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.Size = new System.Drawing.Size(100, 100);
+            this.btnDown.TabIndex = 4;
+            this.btnDown.UseVisualStyleBackColor = true;
+            // 
+            // btnUp
+            // 
+            this.btnUp.Image = global::veiculoInterfaz.Properties.Resources.up_arrow;
+            this.btnUp.Location = new System.Drawing.Point(272, 93);
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Size = new System.Drawing.Size(100, 100);
+            this.btnUp.TabIndex = 3;
+            this.btnUp.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 475);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnForward);
+            this.Controls.Add(this.btnLeft);
+            this.Controls.Add(this.btnRight);
+            this.Controls.Add(this.btnDown);
+            this.Controls.Add(this.btnUp);
             this.Controls.Add(this.btnBrazo);
             this.Controls.Add(this.btnCarro);
             this.Name = "Form1";
@@ -134,13 +170,16 @@
 
         private System.Windows.Forms.Button btnCarro;
         private System.Windows.Forms.Button btnBrazo;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnUp;
+        private System.Windows.Forms.Button btnDown;
+        private System.Windows.Forms.Button btnRight;
+        private System.Windows.Forms.Button btnLeft;
+        private System.Windows.Forms.Button btnForward;
+        private System.Windows.Forms.Button btnBack;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
